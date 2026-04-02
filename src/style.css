@@ -1,0 +1,110 @@
+:root {
+    --bg-color: #FDFDFD;
+    --text-color: #000000;
+    --accent-color: #000000;
+    --grid-color: rgba(0, 0, 0, 0.05);
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#ui-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    pointer-events: none;
+}
+
+#ui-container * {
+    pointer-events: auto;
+}
+
+.header h1 {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+}
+
+#observer-text {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #666;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#semantic-input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--text-color);
+    padding: 8px 0;
+    font-size: 14px;
+    font-family: var(--font-main);
+    font-weight: 700;
+    width: 250px;
+    color: var(--text-color);
+    outline: none;
+    transition: width 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#semantic-input::placeholder {
+    color: #999;
+}
+
+#semantic-input:focus {
+    width: 350px;
+}
+
+#snapshot-btn {
+    background: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 10px 24px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#snapshot-btn:hover {
+    background: #333;
+}
+
+#snapshot-btn:active {
+    background: #000;
+    transform: scale(0.98);
+}
+
+#canvas-container {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+}
