@@ -12,4 +12,4 @@ This project was developed through a dialogue between **Sugawara (Human/Designer
 - **Gemini (Strategy 01: The Commander)**: Compiled the emotional noise into structural logic and Swiss Grid parameters.
 
 ---
-*"Finding your story with you."* — **stilllife**
+© 2026 stilllife / Produced by Sugawara "Finding your story with you."
